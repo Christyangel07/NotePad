@@ -1,0 +1,20 @@
+{% extends 'base.html' %}
+
+{% block head %}
+
+{{ super()}}
+<link rel="stylesheet" href="{{url_for('static', filename='extended_beauty.css')}}" />
+
+{% endblock %}
+
+{% block content %}
+
+<h1> Welcome to NotePad</h1>
+
+<center> 
+    <img src="{{url_for('static', filename='images/notebook.jpg')}}" alt="notebook" height=200px />
+</center>
+
+<p> This website helps you to take notes<br/> Welcome to this website </p>
+
+{% endblock %}

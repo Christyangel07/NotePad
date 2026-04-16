@@ -1,0 +1,12 @@
+{% extends 'base.html' %}
+
+{% block head %}
+
+{{ super()}}
+<link rel="stylesheet" href="{{url_for('static', filename='extended_beauty.css')}}" />
+
+{% endblock %}
+
+{% block content %}
+<h2>Welcome, {{name}}! </h2> 
+{% endblock %}
